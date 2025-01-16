@@ -83,7 +83,7 @@ const resetButton = () => {
 <style scoped>
 .wrap {
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 
 .container {

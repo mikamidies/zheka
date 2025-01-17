@@ -11,26 +11,48 @@
         </p>
       </div>
     </div>
+
+    <div class="slider">
+      <Swiper :slides="slides" />
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const tabs = ref([
-  { title: "Frontend", image: "/assets/img/serv-1.jpg" },
-  { title: "Backend", image: "/assets/img/serv-2.jpg" },
-  { title: "Game development", image: "/assets/img/serv-3.jpg" },
-  { title: "Graphic design", image: "/assets/img/serv-4.jpg" },
-]);
-
-const activeTab = ref(0);
+const slides = [
+  {
+    title: "Frontend",
+    image: "/assets/img/serv-1.jpg",
+  },
+  {
+    title: "Backend",
+    image: "/assets/img/serv-2.jpg",
+  },
+  {
+    title: "Game development",
+    image: "/assets/img/serv-3.jpg",
+  },
+  {
+    title: "Graphic design",
+    image: "/assets/img/serv-4.jpg",
+  },
+];
 </script>
 
 <style scoped>
+.liner {
+  padding-bottom: 40px;
+}
 .txt {
   font-size: 24px;
   max-width: 80%;
   display: flex;
+}
+.swiper {
+  border-block: 1px solid #ebebeb;
+  padding: 40px 0;
+}
+.slider {
+  padding-bottom: 80px;
 }
 </style>

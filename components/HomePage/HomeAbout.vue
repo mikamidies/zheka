@@ -25,7 +25,7 @@
 
 <style scoped>
 .txt {
-  font-size: 24px;
+  font-size: 20px;
   max-width: 80%;
   display: flex;
 }

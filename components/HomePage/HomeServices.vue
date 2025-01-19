@@ -79,7 +79,7 @@ function prevSlide() {
   padding: 40px 0;
 }
 .slider {
-  padding-bottom: 80px;
+  margin-bottom: -1px;
 }
 .header {
   display: grid;

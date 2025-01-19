@@ -111,7 +111,7 @@ onUnmounted(() => {
   background: var(--blue);
   width: 180px;
   height: 50px;
-  border-radius: 4px;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   display: flex;

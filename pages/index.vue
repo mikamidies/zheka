@@ -7,7 +7,9 @@
       <HomeServices />
       <HomePortfolio />
       <HomeWhy />
+      <HomeForm />
     </main>
+    <TheFooter />
   </div>
 </template>
 
@@ -17,6 +19,7 @@ import HomeAbout from "~/components/HomePage/HomeAbout.vue";
 import HomeServices from "~/components/HomePage/HomeServices.vue";
 import HomePortfolio from "~/components/HomePage/HomePortfolio.vue";
 import HomeWhy from "~/components/HomePage/HomeWhy.vue";
+import HomeForm from "~/components/HomePage/HomeForm.vue";
 
 export default {
   components: {
@@ -25,6 +28,7 @@ export default {
     HomeServices,
     HomePortfolio,
     HomeWhy,
+    HomeForm,
   },
 };
 </script>

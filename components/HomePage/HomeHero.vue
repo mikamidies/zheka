@@ -14,8 +14,8 @@
 
           <div class="text">
             <p class="txt">
-              Ninjas is a design and development agency wo specialise in simple,
-              useful and beatiful solution
+              Turning bugs into features since 2020. <br />
+              No <span>404</span>s here!
             </p>
           </div>
 
@@ -25,13 +25,40 @@
             @mousemove="moveButton"
             @mouseleave="resetButton"
           >
-            <button>Contact Us</button>
+            <button>Contact me</button>
             <img class="gif" src="/public/assets/img/square.gif" alt="" />
           </div>
         </div>
         <div class="right">
-          <div class="round"></div>
-          <div class="glass"></div>
+          <svg
+            class="home__blob"
+            viewBox="0 0 200 187"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+              />
+              <image
+                class="home__blob-img"
+                x="12"
+                y="18"
+                href="/public/assets/img/abbos.png"
+              />
+            </g>
+          </svg>
         </div>
       </div>
     </div>
@@ -81,9 +108,18 @@ const resetButton = () => {
 </script>
 
 <style scoped>
+.home__blob {
+  width: 400px;
+  fill: var(--blue);
+}
+
+.home__blob-img {
+  width: 170px;
+}
+
 .wrap {
   position: relative;
-  height: 90vh;
+  height: 80vh;
 }
 
 .container {
@@ -93,7 +129,7 @@ const resetButton = () => {
 .grid {
   height: 100%;
   display: grid;
-  grid-template-columns: 6fr 4fr;
+  grid-template-columns: 5fr 5fr;
   align-items: center;
   border-inline: 1px solid #ebebeb;
 }
@@ -115,7 +151,7 @@ const resetButton = () => {
 .left button {
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 24px;
   width: 176px;
   height: 176px;
@@ -159,12 +195,17 @@ const resetButton = () => {
 
 .txt {
   max-width: 500px;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   /* 133.333% */
   letter-spacing: 0.72px;
+  font-style: italic;
+}
+
+.txt span {
+  color: var(--blue);
 }
 
 .glass {
@@ -181,7 +222,7 @@ const resetButton = () => {
 .right {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .round {

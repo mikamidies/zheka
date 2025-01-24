@@ -3,7 +3,7 @@
     <div class="container">
       <div class="left">
         <button>
-          <img width="120" src="/public/assets/img/logo/brand.svg" alt="" />
+          <img class="brand" src="/public/assets/img/logo/brand.png" alt="" />
         </button>
       </div>
       <div class="mid">
@@ -22,7 +22,7 @@
         </button>
         <div class="batton">
           <button class="call">
-            Contact us
+            Contact me
             <Icon icon="mdi:call" />
           </button>
           <img class="gif" src="/public/assets/img/square.gif" alt="" />
@@ -55,7 +55,7 @@ onUnmounted(() => {
 
 <style scoped>
 .wrap {
-  padding: 16px;
+  padding: 10px;
   border-bottom: 1px solid #ebebeb;
   /* position: fixed; */
   top: 0;
@@ -64,6 +64,12 @@ onUnmounted(() => {
   background: white;
   z-index: 99;
   transition: 0.4s;
+}
+
+.brand {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
 }
 
 .wrap.scroll {
@@ -80,6 +86,11 @@ onUnmounted(() => {
   display: flex;
   justify-content: center;
   gap: 40px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
 }
 
 .right {

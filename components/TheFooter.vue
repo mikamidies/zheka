@@ -17,7 +17,7 @@
           </div>
           <div class="right">
             <div class="square">
-              <img src="/public/assets/img/logo/brand.svg" alt="" />
+              <img src="/public/assets/img/logo/brand.png" alt="" />
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@
   justify-content: center;
 }
 .square img {
-  width: 220px;
+  width: 200px;
 }
 .right {
   display: flex;

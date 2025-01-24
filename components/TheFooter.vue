@@ -63,7 +63,7 @@
 .cardo {
   background: var(--blue);
   border-radius: 32px 32px;
-  padding: 64px 48px;
+  padding: 48px;
   display: grid;
   grid-template-columns: 7fr 3fr;
   gap: 40px;
@@ -86,8 +86,8 @@
   color: white;
 }
 .square {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background: white;
   border-radius: 50%;
   display: flex;
@@ -95,7 +95,7 @@
   justify-content: center;
 }
 .square img {
-  width: 200px;
+  width: 160px;
 }
 .right {
   display: flex;

@@ -106,7 +106,7 @@
 
 .image {
   width: 100%;
-  height: 440px;
+  height: 380px;
   border-radius: 12px;
   border: 1px solid #ebebeb;
   overflow: hidden;

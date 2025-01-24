@@ -32,7 +32,7 @@
 
 video {
   width: 100%;
-  height: 480px;
+  height: 440px;
   margin-top: 24px;
   object-fit: cover;
   border-radius: 12px;

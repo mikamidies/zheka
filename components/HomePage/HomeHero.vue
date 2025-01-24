@@ -109,7 +109,7 @@ const resetButton = () => {
 
 <style scoped>
 .home__blob {
-  width: 400px;
+  width: 440px;
   fill: var(--blue);
 }
 

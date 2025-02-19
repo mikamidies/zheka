@@ -106,7 +106,8 @@ const scrollElement = (id) => {
 }
 
 .mid button {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: var(--medium);
   transition: 0.4s;
 }
 

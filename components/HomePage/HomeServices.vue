@@ -7,9 +7,9 @@
 
         <div class="header">
           <p class="txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            fugit accusantium enim fugiat debitis assumenda fugit accusantium
-            enim fugiat debitis
+            Throughout my career, I’ve worked on a wide range of projects, from elegant landing pages to complex
+            e-commerce platforms. My focus has always been on delivering clean, efficient, and user-friendly solutions
+            that meet both client and user needs.
           </p>
 
           <div class="buttons">
@@ -34,19 +34,19 @@
 import { ref } from "vue";
 const slides = [
   {
-    title: "Frontend",
+    title: "Landing pages",
     image: "/assets/img/serv-1.jpg",
   },
   {
-    title: "Backend",
+    title: "Catalog websites",
     image: "/assets/img/serv-2.jpg",
   },
   {
-    title: "Game development",
+    title: "E-commerce platforms",
     image: "/assets/img/serv-3.jpg",
   },
   {
-    title: "Graphic design",
+    title: "Crm systems",
     image: "/assets/img/serv-4.jpg",
   },
 ];
@@ -72,8 +72,8 @@ function prevSlide() {
 }
 
 .txt {
-  font-size: 20px;
-  max-width: 80%;
+  font-size: 18px;
+  max-width: 95%;
   display: flex;
 }
 
@@ -95,12 +95,12 @@ function prevSlide() {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 24px;
+  gap: 8px;
   padding-right: 32px;
 }
 
 .buttons button {
-  border: 2px solid var(--blue);
+  border: 1px solid var(--blue);
   width: 40px;
   height: 40px;
   border-radius: 50%;

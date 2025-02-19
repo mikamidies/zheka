@@ -15,6 +15,7 @@
 
 :root {
   --blue: #5271ff;
+  --yellow: #f3d112;
 
   --regular: "Inter";
   --medium: "Inter-md";
@@ -22,7 +23,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -30,11 +31,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--blue);
+  background: var(--yellow);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue);
+  background: var(--yellow);
 }
 
 *,

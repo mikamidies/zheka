@@ -15,7 +15,7 @@
 
           <div class="text">
             <p class="txt">
-              Turning bugs into features since 2020. <br />
+              Turning bugs into features since 2021. <br />
               No <span>404</span>s here!
             </p>
           </div>
@@ -112,13 +112,13 @@ const scrollElement = (id) => {
 .grid {
   height: 100%;
   display: grid;
-  grid-template-columns: 5fr 5fr;
+  grid-template-columns: 6fr 4fr;
   align-items: center;
   border-inline: 1px solid #ebebeb;
 }
 
 .title {
-  font-size: 68px;
+  font-size: 80px;
   font-style: normal;
   line-height: 72px;
   font-family: var(--bold);

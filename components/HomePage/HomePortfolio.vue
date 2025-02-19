@@ -12,12 +12,12 @@
             </div>
             <div class="content">
               <div>
-                <p class="name">Website name</p>
-                <p class="sub">Website description, what the heck is this?!</p>
+                <p class="name">Fintax</p>
+                <p class="sub">Website for accountant company</p>
               </div>
               <div class="linker">
                 <a href="#" target="_blank" class="link">
-                  www.websitelink.com
+                  www.fintax.uz
                   <Icon icon="material-symbols:arrow-insert-rounded" />
                 </a>
               </div>
@@ -29,12 +29,12 @@
             </div>
             <div class="content">
               <div>
-                <p class="name">Website name</p>
-                <p class="sub">Website description, what the heck is this?!</p>
+                <p class="name">Hyper Power Server</p>
+                <p class="sub">Web-server supply shop</p>
               </div>
               <div class="linker">
                 <a href="#" target="_blank" class="link">
-                  www.websitelink.com
+                  www.hpsuz.com
                   <Icon icon="material-symbols:arrow-insert-rounded" />
                 </a>
               </div>
@@ -46,12 +46,12 @@
             </div>
             <div class="content">
               <div>
-                <p class="name">Website name</p>
-                <p class="sub">Website description, what the heck is this?!</p>
+                <p class="name">Uzbekistan Airways Tech</p>
+                <p class="sub">The only aircraft repair center in central asia</p>
               </div>
               <div class="linker">
                 <a href="#" target="_blank" class="link">
-                  www.websitelink.com
+                  www.airtech.uz
                   <Icon icon="material-symbols:arrow-insert-rounded" />
                 </a>
               </div>
@@ -63,12 +63,12 @@
             </div>
             <div class="content">
               <div>
-                <p class="name">Website name</p>
-                <p class="sub">Website description, what the heck is this?!</p>
+                <p class="name">Polimer Group Asia</p>
+                <p class="sub">Leading manufacturer of polymer pipes</p>
               </div>
               <div class="linker">
                 <a href="#" target="_blank" class="link">
-                  www.websitelink.com
+                  www.pga.uz
                   <Icon icon="material-symbols:arrow-insert-rounded" />
                 </a>
               </div>
@@ -80,12 +80,12 @@
             </div>
             <div class="content">
               <div>
-                <p class="name">Website name</p>
-                <p class="sub">Website description, what the heck is this?!</p>
+                <p class="name">Premium Pipe</p>
+                <p class="sub">Leading manufacturer of polymer pipes</p>
               </div>
               <div class="linker">
                 <a href="#" target="_blank" class="link">
-                  www.websitelink.com
+                  www.premiumpipe.uz
                   <Icon icon="material-symbols:arrow-insert-rounded" />
                 </a>
               </div>
@@ -107,7 +107,7 @@
 
 .image {
   width: 100%;
-  height: 380px;
+  height: 480px;
   border-radius: 12px;
   border: 1px solid #ebebeb;
   overflow: hidden;

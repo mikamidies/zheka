@@ -8,7 +8,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const words = ref(['Frontend', 'Backend', 'Game', 'Graphic']);
+const words = ref(['Frontend', 'Web', 'Graphic']);
 const currentText = ref('');
 const typingSpeed = 150;
 const erasingSpeed = 100;

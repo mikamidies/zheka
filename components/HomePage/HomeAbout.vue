@@ -5,14 +5,43 @@
       <div class="liner">
         <h4 class="section__title">About me</h4>
         <p class="txt">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          fugit accusantium enim fugiat debitis necessitatibus inventore nulla
-          neque possimus eos autem corrupti magni, odit hic. Laudantium
-          temporibus facere quaerat, sit corrupti accusamus nihil, non adipisci,
-          voluptatibus commodi molestias sunt sint?
+          Hello! I’m a passionate Frontend Developer with over 3 years of experience, specializing in Vue.js and
+          Nuxt.js. <br> Crafting seamless, pixel-perfect, and responsive web applications is not just my job—it's my
+          art.
+          Let’s build something amazing together!
         </p>
 
         <video muted loop playsinline autoplay src="/public/assets/img/video.mp4"></video>
+
+        <div class="items">
+          <div class="item">
+            <div class="item__logo">
+              <Icon icon="material-symbols:close-fullscreen-rounded" />
+            </div>
+            <h4 class="item__title">Pixel Perfect</h4>
+            <p class="item__txt">
+              Delivering precise, high-quality designs that flawlessly match every detail of the original concept
+            </p>
+          </div>
+          <div class="item">
+            <div class="item__logo">
+              <Icon icon="material-symbols:screenshot-monitor-outline-rounded" />
+            </div>
+            <h4 class="item__title">Responsive</h4>
+            <p class="item__txt">
+              Ensuring seamless functionality and a perfect user experience across all devices and screen sizes
+            </p>
+          </div>
+          <div class="item">
+            <div class="item__logo">
+              <Icon icon="material-symbols:stack-star" />
+            </div>
+            <h4 class="item__title">Modern and Gorgeous </h4>
+            <p class="item__txt">
+              Crafting sleek, cutting-edge visuals that captivate and leave a lasting impression
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -20,8 +49,8 @@
 
 <style scoped>
 .txt {
-  font-size: 20px;
-  max-width: 80%;
+  font-size: 18px;
+  max-width: 90%;
   display: flex;
 }
 
@@ -31,5 +60,32 @@ video {
   margin-top: 24px;
   object-fit: cover;
   border-radius: 12px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.item svg {
+  width: 64px;
+  height: 64px;
+}
+
+.item svg :deep(path) {
+  fill: var(--blue);
+}
+
+.item__title {
+  font-size: 24px;
+  margin: 12px 0;
+  font-family: var(--bold);
+}
+
+.item__txt {
+  font-size: 18px;
+  max-width: 95%;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <div class="anchor" id="hero"></div>
     <div class="container">
       <div class="grid">
         <div class="left">
@@ -19,19 +20,14 @@
             </p>
           </div>
 
-          <div
-            class="batton fancy-button"
-            ref="button"
-            @mousemove="moveButton"
-            @mouseleave="resetButton"
-          >
-            <button>Contact me</button>
+          <div class="batton fancy-button" ref="button" @mousemove="moveButton" @mouseleave="resetButton">
+            <button @click="scrollElement('contact')">Contact me</button>
             <img class="gif" src="/public/assets/img/square.gif" alt="" />
           </div>
         </div>
         <div class="right">
-          <div class="back">
-            <img src="/public/assets/img/abbos.png" alt="" />
+          <div class="round"></div>
+          <div class="glass">
           </div>
         </div>
       </div>
@@ -78,6 +74,14 @@ const resetButton = () => {
     duration: 0.3,
     ease: "power2.out",
   });
+};
+
+const scrollElement = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+  menuHandle.value = false;
 };
 </script>
 
@@ -208,7 +212,7 @@ const resetButton = () => {
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 30%;
+  right: 5%;
   transform: translate(-50%, -50%);
   width: 370px;
   height: 370px;
@@ -220,23 +224,23 @@ const resetButton = () => {
 
 @keyframes move {
   0% {
-    left: 30%;
+    right: 5%;
   }
 
   25% {
-    left: 40%;
+    right: 15%;
   }
 
   50% {
-    left: 30%;
+    right: 5%;
   }
 
   75% {
-    left: 20%;
+    right: 15%;
   }
 
   100% {
-    left: 30%;
+    right: 5%;
   }
 }
 

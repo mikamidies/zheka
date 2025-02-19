@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <div class="anchor" id="contact"></div>
     <div class="container">
       <div class="liner">
         <h4 class="section__title">Contact me</h4>
@@ -25,9 +26,11 @@
   padding-top: 0;
   border-block: 0;
 }
+
 .section__title {
   margin-bottom: 12px;
 }
+
 form {
   background: #ebebeb;
   display: inline-flex;
@@ -36,6 +39,7 @@ form {
   padding: 20px 20px 20px 40px;
   border-radius: 32px;
 }
+
 input {
   background: transparent;
   border: 0;
@@ -44,9 +48,11 @@ input {
   padding: 12px 0;
   font-size: 18px;
 }
+
 input:focus {
   outline: none;
 }
+
 button {
   width: 280px;
   background: white;

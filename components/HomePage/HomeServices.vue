@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <div class="anchor" id="services"></div>
     <div class="container">
       <div class="liner">
         <h4 class="section__title">Services</h4>
@@ -69,22 +70,27 @@ function prevSlide() {
 .liner {
   padding-bottom: 40px;
 }
+
 .txt {
   font-size: 20px;
   max-width: 80%;
   display: flex;
 }
+
 .swiper {
   border-block: 1px solid #ebebeb;
   padding: 40px 0;
 }
+
 .slider {
   margin-bottom: -1px;
 }
+
 .header {
   display: grid;
   grid-template-columns: 7fr 3fr;
 }
+
 .buttons {
   display: flex;
   align-items: center;
@@ -92,6 +98,7 @@ function prevSlide() {
   gap: 24px;
   padding-right: 32px;
 }
+
 .buttons button {
   border: 2px solid var(--blue);
   width: 40px;
@@ -101,10 +108,12 @@ function prevSlide() {
   align-items: center;
   justify-content: center;
 }
+
 .buttons button svg {
   width: 24px;
   height: 24px;
 }
+
 .buttons :deep(path) {
   fill: var(--blue);
 }

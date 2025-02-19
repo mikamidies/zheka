@@ -160,3 +160,7 @@ body {
   margin-bottom: -1px;
   padding: 80px 0 80px 32px;
 }
+
+.anchor {
+  transform: translateY(-72px);
+}

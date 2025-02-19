@@ -2,26 +2,23 @@
   <div class="wrap" id="navbar">
     <div class="container">
       <div class="left">
-        <button>
+        <button @click="scrollElement('hero')">
           <img class="brand" src="/public/assets/img/logo/brand.png" alt="" />
         </button>
       </div>
       <div class="mid">
-        <button>About</button>
-        <button>Services</button>
-        <button>Portfolio</button>
-        <button>Contacts</button>
+        <button @click="scrollElement('about')">About</button>
+        <button @click="scrollElement('services')">Services</button>
+        <button @click="scrollElement('portfolio')">Portfolio</button>
+        <button @click="scrollElement('contact')">Contact</button>
       </div>
       <div class="right">
         <button class="lang">
           Eng
-          <Icon
-            style="width: 32px; height: 32px"
-            icon="twemoji:flag-for-flag-united-kingdom"
-          />
+          <Icon style="width: 32px; height: 32px" icon="twemoji:flag-for-flag-united-kingdom" />
         </button>
         <div class="batton">
-          <button class="call">
+          <button class="call" @click="scrollElement('contact')">
             Contact me
             <Icon icon="mdi:call" />
           </button>
@@ -51,6 +48,14 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", scrollHeader);
 });
+
+const scrollElement = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+  menuHandle.value = false;
+};
 </script>
 
 <style scoped>
@@ -114,8 +119,8 @@ onUnmounted(() => {
   align-items: center;
   gap: 12px;
   font-size: 20px;
-
   font-family: var(--medium);
+  display: none;
 }
 
 .batton {

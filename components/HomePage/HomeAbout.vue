@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <div class="anchor" id="about"></div>
     <div class="container">
       <div class="liner">
         <h4 class="section__title">About me</h4>
@@ -11,13 +12,7 @@
           voluptatibus commodi molestias sunt sint?
         </p>
 
-        <video
-          muted
-          loop
-          playsinline
-          autoplay
-          src="/public/assets/img/video.mp4"
-        ></video>
+        <video muted loop playsinline autoplay src="/public/assets/img/video.mp4"></video>
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <div class="anchor" id="portfolio"></div>
     <div class="container">
       <div class="liner">
         <h4 class="section__title">My Portfolio</h4>
@@ -111,34 +112,41 @@
   border: 1px solid #ebebeb;
   overflow: hidden;
 }
+
 .pic {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.4s;
 }
+
 .item:hover .pic {
   transform: scale(1.2);
 }
+
 .content {
   display: grid;
   grid-template-columns: 6fr 4fr;
   align-items: end;
   padding-top: 16px;
 }
+
 .name {
   font-family: var(--bold);
   font-size: 28px;
   margin-bottom: 4px;
 }
+
 .sub {
   font-size: 18px;
 }
+
 .linker {
   display: flex;
   justify-content: flex-end;
   padding-right: 16px;
 }
+
 .link {
   font-size: 18px;
   font-style: italic;
@@ -147,6 +155,7 @@
   gap: 8px;
   color: var(--blue);
 }
+
 .link svg {
   transform: rotate(90deg);
 }

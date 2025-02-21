@@ -101,7 +101,7 @@ video {
 }
 @media (max-width: 1023px) {
   .liner {
-    padding: 32px 12px;
+    padding: 0 12px 48px 12px;
   }
   .txt {
     font-size: 14px;

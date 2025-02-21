@@ -168,7 +168,7 @@ body {
 
 @media (max-width: 1023px) {
   .liner {
-    border-inline: 0 !important;
+    border: 0 !important;
     padding: 0 16px;
   }
   .section__title {

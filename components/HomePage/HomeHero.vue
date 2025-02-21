@@ -266,7 +266,7 @@ const scrollElement = (id) => {
 
 @media (max-width: 1023px) {
   .wrap {
-    height: 60vh;
+    height: 480px;
   }
   .right {
     display: none;
@@ -279,8 +279,8 @@ const scrollElement = (id) => {
     border: 0;
   }
   .title {
-    font-size: 48px;
-    line-height: 120%;
+    font-size: 40px;
+    line-height: 100%;
     text-align: center;
   }
   .title span {
@@ -288,7 +288,7 @@ const scrollElement = (id) => {
     justify-content: center;
   }
   .left {
-    gap: 32px;
+    gap: 24px;
     padding: 0;
     width: 100%;
     display: flex;
@@ -304,6 +304,7 @@ const scrollElement = (id) => {
     width: 286px;
     height: 64px;
     border-radius: 12px;
+    font-size: 18px;
   }
 }
 </style>

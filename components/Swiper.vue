@@ -110,7 +110,7 @@ defineExpose({
 @media (max-width: 1023px) {
   .swiper {
     border-block: 0 !important;
-    padding: 12px 0 80px 0 !important;
+    padding: 12px 0 64px 0 !important;
   }
   .swiper-slide img {
     height: 220px;

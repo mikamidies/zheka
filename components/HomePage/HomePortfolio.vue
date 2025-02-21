@@ -178,6 +178,10 @@
   font-family: var(--medium);
 }
 @media (max-width: 1023px) {
+  .liner {
+    padding: 32px 12px;
+    border-top: 1px solid #ebebeb !important;
+  }
   .items {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 0;

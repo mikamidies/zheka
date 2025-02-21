@@ -87,6 +87,10 @@ button {
   flex-direction: column;
 }
 @media (max-width: 1023px) {
+  .liner {
+    padding: 32px 12px 0 12px;
+    border-top: 1px solid #ebebeb !important;
+  }
   .anchor {
     transform: translateY(-172px);
   }

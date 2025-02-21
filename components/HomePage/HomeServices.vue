@@ -120,8 +120,8 @@ function prevSlide() {
 }
 @media (max-width: 1023px) {
   .liner {
-    padding: 0 12px 32px 12px;
-    border-block: 0;
+    padding: 32px 12px;
+    border-top: 1px solid #ebebeb !important;
   }
   .buttons {
     display: none;

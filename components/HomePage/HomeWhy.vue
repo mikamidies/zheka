@@ -102,7 +102,8 @@
 }
 @media (max-width: 1023px) {
   .liner {
-    padding: 48px 12px;
+    padding: 32px 12px;
+    border-top: 1px solid #ebebeb !important;
   }
   .cardo {
     grid-template-columns: repeat(1, 1fr);

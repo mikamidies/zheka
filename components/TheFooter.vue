@@ -178,17 +178,23 @@
   .bottom {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 12px;
-    padding: 16px 0;
+    gap: 8px;
+    padding: 16px 0 0 0;
   }
   .leftist {
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     text-align: center;
   }
   .item {
     gap: 0px;
     align-items: center !important;
+  }
+  .sup {
+    font-size: 14px;
+  }
+  .value {
+    font-size: 16px;
   }
 }
 </style>

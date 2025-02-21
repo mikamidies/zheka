@@ -266,7 +266,9 @@ const scrollElement = (id) => {
 
 @media (max-width: 1023px) {
   .wrap {
-    height: 480px;
+    height: 400px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 32px;
   }
   .right {
     display: none;

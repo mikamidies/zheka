@@ -111,6 +111,7 @@ video {
     height: 220px;
   }
   .items {
+    gap: 16px;
     grid-template-columns: repeat(1, 1fr);
   }
   .item svg {
@@ -123,11 +124,15 @@ video {
   }
   .item__title {
     text-align: center;
+    margin: 0;
+    font-size: 20px;
+    line-height: 160%;
   }
   .item__txt {
     text-align: center;
     font-size: 14px;
-    max-width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 </style>

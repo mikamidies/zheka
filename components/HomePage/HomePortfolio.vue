@@ -177,4 +177,27 @@
   color: white;
   font-family: var(--medium);
 }
+@media (max-width: 1023px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image {
+    height: 220px;
+  }
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 12px;
+  }
+  .name {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .sub {
+    font-size: 14px;
+  }
+  .vinet {
+    height: 64px;
+    font-size: 20px;
+  }
+}
 </style>

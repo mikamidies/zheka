@@ -153,4 +153,42 @@
 .socs :deep(path) {
   fill: var(--blue);
 }
+@media (max-width: 1023px) {
+  .cardo {
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 16px;
+    padding: 24px;
+    gap: 24px;
+  }
+  .liner {
+    padding: 32px 16px;
+  }
+  .text {
+    font-size: 28px;
+  }
+  .square {
+    width: 100%;
+    height: 100px;
+    border-radius: 16px;
+  }
+  .square img {
+    width: 80px;
+    height: 80px;
+  }
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    padding: 16px 0;
+  }
+  .leftist {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  .item {
+    gap: 0px;
+    align-items: center !important;
+  }
+}
 </style>

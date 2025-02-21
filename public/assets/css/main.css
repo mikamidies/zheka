@@ -165,3 +165,14 @@ body {
 .anchor {
   transform: translateY(-72px);
 }
+
+@media (max-width: 1023px) {
+  .liner {
+    border-inline: 0 !important;
+    padding: 0 16px;
+  }
+  .section__title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}

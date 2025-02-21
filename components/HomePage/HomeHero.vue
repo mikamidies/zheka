@@ -254,76 +254,6 @@ const scrollElement = (id) => {
   position: relative;
 }
 
-@media (max-width: 1023px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 20px;
-  }
-
-  .left {
-    padding-left: 0;
-    align-items: center;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 48px;
-    line-height: 56px;
-  }
-
-  .txt {
-    max-width: 100%;
-  }
-
-  .glass img {
-    height: 180px;
-  }
-
-  .round {
-    width: 280px;
-    height: 280px;
-  }
-}
-
-@media (max-width: 767px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .left button {
-    width: 140px;
-    height: 140px;
-    font-size: 16px;
-  }
-
-  .batton {
-    width: 140px;
-    height: 140px;
-  }
-
-  .txt {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .glass img {
-    height: 120px;
-  }
-
-  .round {
-    width: 200px;
-    height: 200px;
-  }
-}
-
 .glass {
   width: 448px;
   height: 220px;
@@ -332,5 +262,48 @@ const scrollElement = (id) => {
   border-radius: 12px 0 0 12px;
   box-shadow: -6px 0 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
   mix-blend-mode: inherit;
+}
+
+@media (max-width: 1023px) {
+  .wrap {
+    height: 60vh;
+  }
+  .right {
+    display: none;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 0;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+  }
+  .title span {
+    display: flex;
+    justify-content: center;
+  }
+  .left {
+    gap: 32px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .txt {
+    text-align: center;
+    font-size: 14px;
+  }
+  .batton,
+  .left button {
+    width: 286px;
+    height: 64px;
+    border-radius: 12px;
+  }
 }
 </style>

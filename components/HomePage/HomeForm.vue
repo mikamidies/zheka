@@ -86,4 +86,24 @@ button {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1023px) {
+  form {
+    margin-top: 32px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 12px;
+    border-radius: 16px;
+    gap: 16px;
+  }
+  input,
+  textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  button {
+    height: 48px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+}
 </style>

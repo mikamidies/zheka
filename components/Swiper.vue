@@ -35,13 +35,19 @@ onMounted(() => {
   swiperInstance.value = new Swiper(".swiper", {
     modules: [Autoplay],
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 28,
+    slidesPerView: 1.2,
+    spaceBetween: 8,
     effect: "coverflow",
     centeredSlides: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 28,
+      },
     },
   });
 });
@@ -100,5 +106,20 @@ defineExpose({
 
 .swiper :deep(.swiper-slide-active:hover) .hidden {
   opacity: 1;
+}
+@media (max-width: 1023px) {
+  .swiper {
+    border-block: 0 !important;
+    padding: 12px 0 80px 0 !important;
+  }
+  .swiper-slide img {
+    height: 220px;
+  }
+  .swiper :deep(.swiper-slide-active) .hidden {
+    opacity: 1;
+  }
+  .txt {
+    font-size: 20px;
+  }
 }
 </style>

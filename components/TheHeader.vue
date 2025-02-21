@@ -22,7 +22,7 @@
         </button>
         <div class="batton">
           <button class="call" @click="scrollElement('contact')">
-            Contact me
+            <p>Contact me</p>
             <Icon icon="ic:baseline-phone-in-talk" />
           </button>
           <img class="gif" src="/public/assets/img/square.gif" alt="" />
@@ -162,65 +162,30 @@ const scrollElement = (id) => {
 }
 
 @media (max-width: 1023px) {
+  .brand {
+    width: 72px;
+    height: 56px;
+  }
   .container {
-    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-
   .mid {
-    gap: 20px;
+    display: none;
+  }
+  .batton {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
   }
 
-  .right {
-    gap: 20px;
+  .call p {
+    display: none;
   }
-
-  .mid button {
-    font-size: 16px;
-  }
-
-  .lang {
-    font-size: 18px;
-  }
-
-  .call {
-    min-width: 150px;
-    height: 40px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .left {
-    text-align: center;
-  }
-
-  .mid {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .right {
-    justify-content: center;
-    gap: 16px;
-  }
-
-  .mid button {
-    font-size: 14px;
-  }
-
-  .lang {
-    font-size: 16px;
-  }
-
-  .call {
-    min-width: 120px;
-    height: 36px;
-    font-size: 14px;
+  .call svg {
+    width: 20px;
+    height: 20px;
   }
 }
 </style>

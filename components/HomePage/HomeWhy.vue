@@ -68,6 +68,7 @@
   z-index: 1;
   border-radius: 24px;
   opacity: 0.22;
+  pointer-events: none;
 }
 .item {
   background: white;
@@ -98,5 +99,24 @@
   right: -80px;
   width: 320px;
   z-index: 3;
+}
+@media (max-width: 1023px) {
+  .liner {
+    padding: 48px 12px;
+  }
+  .cardo {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 12px;
+    border-radius: 16px;
+  }
+  .gif {
+    border-radius: 16px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .txt {
+    font-size: 14px;
+  }
 }
 </style>

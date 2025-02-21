@@ -7,9 +7,10 @@
 
         <div class="header">
           <p class="txt">
-            Throughout my career, I’ve worked on a wide range of projects, from elegant landing pages to complex
-            e-commerce platforms. My focus has always been on delivering clean, efficient, and user-friendly solutions
-            that meet both client and user needs.
+            Throughout my career, I’ve worked on a wide range of projects, from
+            elegant landing pages to complex e-commerce platforms. My focus has
+            always been on delivering clean, efficient, and user-friendly
+            solutions that meet both client and user needs.
           </p>
 
           <div class="buttons">
@@ -116,5 +117,20 @@ function prevSlide() {
 
 .buttons :deep(path) {
   fill: var(--blue);
+}
+@media (max-width: 1023px) {
+  .liner {
+    padding: 32px 12px;
+    border-block: 0;
+  }
+  .buttons {
+    display: none;
+  }
+  .header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .txt {
+    font-size: 14px;
+  }
 }
 </style>

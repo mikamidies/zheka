@@ -178,12 +178,12 @@
   .bottom {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 8px;
+    gap: 12px;
     padding: 16px 0 0 0;
   }
   .leftist {
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     text-align: center;
   }
   .item {

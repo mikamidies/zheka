@@ -282,7 +282,7 @@ const scrollElement = (id) => {
   }
   .title {
     font-size: 40px;
-    line-height: 100%;
+    line-height: 120%;
     text-align: center;
   }
   .title span {
@@ -304,7 +304,7 @@ const scrollElement = (id) => {
   .batton,
   .left button {
     width: 286px;
-    height: 64px;
+    height: 56px;
     border-radius: 12px;
     font-size: 18px;
   }

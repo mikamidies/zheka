@@ -8,36 +8,33 @@
           <img class="gif" src="/public/assets/img/square.gif" alt="" />
           <div class="item">
             <p class="title">
-              I'm the fastest <Icon icon="material-symbols:rocket-launch" />
+              Fastest <Icon icon="material-symbols:rocket-launch" />
             </p>
             <p class="txt">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nemo
-              fugiat a quibusdam dignissimos inventore, repellat sapiente harum
-              consequuntur sint.
+              Quick Turnarounds - I deliver fast, efficient solutions without
+              cutting corners—because your time matters.
             </p>
           </div>
           <div class="item">
             <p class="title">
-              The best quality
+              Quality
               <Icon icon="material-symbols:award-star-rounded" />
             </p>
             <p class="txt">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nemo
-              fugiat a quibusdam dignissimos inventore, repellat sapiente.
+              Top-Notch Work - Every detail is crafted with precision, ensuring
+              high-quality results that exceed expectations.
             </p>
           </div>
           <div class="item">
             <p class="title">
-              Cheap prices
-              <Icon icon="material-symbols:money-bag-rounded" />
+              Reliability
+              <Icon icon="material-symbols:approval-delegation" />
             </p>
             <p class="txt">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nemo
-              fugiat a quibusdam dignissimos inventore.
+              Dependable Every Time - Consistent, clear, and committed. I’m here
+              to deliver exactly what you need, when you need it.
             </p>
           </div>
-
-          <img class="rocket" src="/public/assets/img/rocket.gif" alt="" />
         </div>
       </div>
     </div>
@@ -80,12 +77,12 @@
   z-index: 2;
 }
 .title {
-  font-size: 28px;
+  font-size: 30px;
   font-family: var(--bold);
   margin-bottom: 8px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 .title :deep(path) {
   fill: var(--blue);

@@ -47,7 +47,9 @@
             <div class="content">
               <div>
                 <p class="name">Uzbekistan Airways Tech</p>
-                <p class="sub">The only aircraft repair center in central asia</p>
+                <p class="sub">
+                  The only aircraft repair center in central asia
+                </p>
               </div>
               <div class="linker">
                 <a href="#" target="_blank" class="link">
@@ -90,6 +92,9 @@
                 </a>
               </div>
             </div>
+          </div>
+          <div class="item">
+            <div class="vinet">and 50+ more projects</div>
           </div>
         </div>
       </div>
@@ -142,7 +147,7 @@
 }
 
 .linker {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   padding-right: 16px;
 }
@@ -158,5 +163,18 @@
 
 .link svg {
   transform: rotate(90deg);
+}
+
+.vinet {
+  width: 100%;
+  height: 480px;
+  background: var(--blue);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  font-family: var(--medium);
 }
 </style>

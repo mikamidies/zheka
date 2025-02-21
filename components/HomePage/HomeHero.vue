@@ -20,15 +20,19 @@
             </p>
           </div>
 
-          <div class="batton fancy-button" ref="button" @mousemove="moveButton" @mouseleave="resetButton">
+          <div
+            class="batton fancy-button"
+            ref="button"
+            @mousemove="moveButton"
+            @mouseleave="resetButton"
+          >
             <button @click="scrollElement('contact')">Contact me</button>
             <img class="gif" src="/public/assets/img/square.gif" alt="" />
           </div>
         </div>
         <div class="right">
           <div class="round"></div>
-          <div class="glass">
-          </div>
+          <div class="glass"></div>
         </div>
       </div>
     </div>
@@ -132,12 +136,12 @@ const scrollElement = (id) => {
 }
 
 .left button {
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  width: 176px;
-  height: 176px;
+  width: 186px;
+  height: 186px;
   border-radius: 50%;
   color: white;
   border: none;
@@ -154,8 +158,8 @@ const scrollElement = (id) => {
   position: relative;
   overflow: hidden;
   display: inline-flex;
-  width: 176px;
-  height: 176px;
+  width: 186px;
+  height: 186px;
   border-radius: 50%;
   background: var(--blue);
 }

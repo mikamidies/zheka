@@ -3,18 +3,24 @@
     <div class="anchor" id="contact"></div>
     <div class="container">
       <div class="liner">
-        <h4 class="section__title">Contact me</h4>
-        <p class="sub">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-          impedit sequi deserunt ullam magnam consectetur!
-        </p>
+        <div class="div">
+          <h4 class="section__title">Contact me</h4>
+          <p class="sub">
+            Describe your project or idea, and I'll get in touch soon!
+          </p>
 
-        <form>
-          <input type="text" placeholder="Your name" />
-          <input type="text" placeholder="Your number" />
+          <form>
+            <div class="inputs">
+              <input type="text" placeholder="Your name" required />
+              <input type="text" placeholder="Your number" required />
+            </div>
+            <textarea placeholder="Message"></textarea>
 
-          <button type="submit">Submit</button>
-        </form>
+            <div class="buttoner">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -23,8 +29,11 @@
 <style scoped>
 .liner {
   margin-top: -32px;
-  padding-top: 0;
-  border-block: 0;
+}
+
+.div {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .section__title {
@@ -32,21 +41,31 @@
 }
 
 form {
+  width: 100%;
   background: #ebebeb;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-top: 24px;
-  padding: 20px 20px 20px 40px;
+  margin-top: 48px;
+  padding: 32px 32px 32px 40px;
   border-radius: 32px;
 }
 
-input {
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input,
+textarea {
   background: transparent;
   border: 0;
-  min-width: 300px;
-  border-bottom: 1px solid #00000042;
-  padding: 12px 0;
+  padding: 16px;
   font-size: 18px;
+  background: white;
+  border-radius: 16px;
+  resize: none;
 }
 
 input:focus {
@@ -54,11 +73,17 @@ input:focus {
 }
 
 button {
-  width: 280px;
-  background: white;
-  border-radius: 18px;
-  height: 58px;
+  height: 100%;
+  width: 100%;
+  background: var(--blue);
+  border-radius: 16px;
   font-family: var(--medium);
-  font-size: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+.buttoner {
+  display: flex;
+  flex-direction: column;
 }
 </style>

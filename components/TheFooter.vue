@@ -5,7 +5,8 @@
         <div class="cardo">
           <div class="left">
             <h4 class="text">
-              Independent <br> <span>Frontend</span> Developer
+              Building solutions <br />
+              Not <span>404s</span> - mikamidies
             </h4>
           </div>
           <div class="right">
@@ -37,7 +38,10 @@
                 <a href="https://github.com/mikamidies" target="_blank">
                   <Icon icon="simple-icons:github" />
                 </a>
-                <a href="https://www.linkedin.com/in/mirabbos-umarov-386867302" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/mirabbos-umarov-386867302"
+                  target="_blank"
+                >
                   <Icon icon="simple-icons:linkedin" />
                 </a>
               </div>
@@ -53,7 +57,7 @@
 .cardo {
   background: var(--blue);
   border-radius: 24px 32px;
-  padding: 32px 48px;
+  padding: 48px;
   display: grid;
   grid-template-columns: 7fr 3fr;
   gap: 40px;
@@ -73,7 +77,7 @@
 
 .left {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .text span {

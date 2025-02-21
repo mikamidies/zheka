@@ -15,12 +15,15 @@
       <div class="right">
         <button class="lang">
           Eng
-          <Icon style="width: 32px; height: 32px" icon="twemoji:flag-for-flag-united-kingdom" />
+          <Icon
+            style="width: 32px; height: 32px"
+            icon="twemoji:flag-for-flag-united-kingdom"
+          />
         </button>
         <div class="batton">
           <button class="call" @click="scrollElement('contact')">
             Contact me
-            <Icon icon="mdi:call" />
+            <Icon icon="ic:baseline-phone-in-talk" />
           </button>
           <img class="gif" src="/public/assets/img/square.gif" alt="" />
         </div>
@@ -126,9 +129,9 @@ const scrollElement = (id) => {
 
 .batton {
   background: var(--blue);
-  width: 180px;
-  height: 50px;
-  border-radius: 8px;
+  width: 220px;
+  height: 56px;
+  border-radius: 16px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -138,7 +141,7 @@ const scrollElement = (id) => {
 
 .call {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   z-index: 2;
   position: relative;
   display: flex;

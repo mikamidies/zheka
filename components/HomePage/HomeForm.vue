@@ -87,6 +87,9 @@ button {
   flex-direction: column;
 }
 @media (max-width: 1023px) {
+  .anchor {
+    transform: translateY(-172px);
+  }
   form {
     margin-top: 32px;
     grid-template-columns: repeat(1, 1fr);

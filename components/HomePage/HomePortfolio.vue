@@ -197,6 +197,10 @@ const formatLink = (url) => url.replace(/^https?:\/\//, "");
     padding: 32px 12px;
     border-top: 1px solid #ebebeb !important;
   }
+  .linker {
+    justify-content: flex-start;
+    margin-top: 4px;
+  }
   .items {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 0;
@@ -213,11 +217,15 @@ const formatLink = (url) => url.replace(/^https?:\/\//, "");
     line-height: 120%;
   }
   .sub {
-    font-size: 14px;
+    font-size: 16px;
+    margin-top: 4px;
   }
   .vinet {
     height: 64px;
     font-size: 20px;
+  }
+  .link {
+    font-style: initial;
   }
 }
 </style>

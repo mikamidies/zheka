@@ -5,6 +5,12 @@
         <div class="cardo">
           <div class="left">
             <h4 class="text">
+              <div class="icons">
+                <Icon icon="fluent-emoji-flat:rocket" />
+                <Icon icon="fluent-emoji-flat:desktop-computer" />
+                <Icon icon="fluent-emoji-flat:money-with-wings" />
+                <Icon icon="fluent-emoji-flat:fire" />
+              </div>
               Building solutions <br />
               Not <span>404s</span> - mikamidies
             </h4>
@@ -152,6 +158,12 @@
 
 .socs :deep(path) {
   fill: var(--blue);
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 @media (max-width: 1023px) {
   .cardo {

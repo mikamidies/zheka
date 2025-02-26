@@ -6,88 +6,18 @@
         <h4 class="section__title">My Portfolio</h4>
 
         <div class="items">
-          <div class="item">
+          <div class="item" v-for="item in port" :key="item.id">
             <div class="image">
-              <img src="/public/assets/img/port-1.jpg" alt="" class="pic" />
+              <img :src="item.img" alt="" class="pic" />
             </div>
             <div class="content">
               <div>
-                <p class="name">Fintax</p>
-                <p class="sub">Website for accountant company</p>
+                <p class="name">{{ item.title }}</p>
+                <p class="sub">{{ item.desc }}</p>
               </div>
               <div class="linker">
-                <a href="#" target="_blank" class="link">
-                  www.fintax.uz
-                  <Icon icon="material-symbols:arrow-insert-rounded" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="/public/assets/img/port-2.jpg" alt="" class="pic" />
-            </div>
-            <div class="content">
-              <div>
-                <p class="name">Hyper Power Server</p>
-                <p class="sub">Web-server supply shop</p>
-              </div>
-              <div class="linker">
-                <a href="#" target="_blank" class="link">
-                  www.hpsuz.com
-                  <Icon icon="material-symbols:arrow-insert-rounded" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="/public/assets/img/port-3.jpg" alt="" class="pic" />
-            </div>
-            <div class="content">
-              <div>
-                <p class="name">Uzbekistan Airways Tech</p>
-                <p class="sub">
-                  The only aircraft repair center in central asia
-                </p>
-              </div>
-              <div class="linker">
-                <a href="#" target="_blank" class="link">
-                  www.airtech.uz
-                  <Icon icon="material-symbols:arrow-insert-rounded" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="/public/assets/img/port-4.jpg" alt="" class="pic" />
-            </div>
-            <div class="content">
-              <div>
-                <p class="name">Polimer Group Asia</p>
-                <p class="sub">Leading manufacturer of polymer pipes</p>
-              </div>
-              <div class="linker">
-                <a href="#" target="_blank" class="link">
-                  www.pga.uz
-                  <Icon icon="material-symbols:arrow-insert-rounded" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="/public/assets/img/port-5.jpg" alt="" class="pic" />
-            </div>
-            <div class="content">
-              <div>
-                <p class="name">Premium Pipe</p>
-                <p class="sub">Leading manufacturer of polymer pipes</p>
-              </div>
-              <div class="linker">
-                <a href="#" target="_blank" class="link">
-                  www.premiumpipe.uz
+                <a :href="item.link" target="_blank" class="link">
+                  {{ formatLink(item.link) }}
                   <Icon icon="material-symbols:arrow-insert-rounded" />
                 </a>
               </div>
@@ -101,6 +31,91 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const port = [
+  {
+    title: "OKC",
+    desc: "Original cosmetics from South Korea",
+    img: "assets/img/okc.jpg",
+    link: "https://okc.uz",
+  },
+  {
+    title: "Savia",
+    desc: "Manufacturer of Faucets and sanitary ware",
+    img: "assets/img/savia.webp",
+    link: "https://saviagroup.uz",
+  },
+  {
+    title: "Jahon Invest Plast",
+    desc: "Manufacturer of plastic consumer goods",
+    img: "assets/img/jip.jpg",
+    link: "https://jahoninvestplast.com",
+  },
+  {
+    title: "Oson School",
+    desc: "Online English Language School",
+    img: "assets/img/oson.png",
+    link: "https://osonschool.uz",
+  },
+  {
+    title: "Hajtex",
+    desc: "Website for the manufacturer of an international textile company",
+    img: "assets/img/hajtex.jpg",
+    link: "https://osonschool.uz",
+  },
+  {
+    title: "Polimer Group Asia",
+    desc: "Leading manufacturer of polymer pipes",
+    img: "assets/img/port-4.jpg",
+    link: "https://pga.uz",
+  },
+  {
+    title: "Hyper Power Server",
+    desc: "Web-server supply shop",
+    img: "assets/img/port-2.jpg",
+    link: "https://hpsuz.com",
+  },
+  {
+    title: "Rehau Asia",
+    desc: "Manufacturer of windows and doors made of Rehau profiles",
+    img: "assets/img/rehau.jpg",
+    link: "https://osonschool.uz",
+  },
+  {
+    title: "Orzu Osh tuzi",
+    desc: "Local manufacturer of iodized salt",
+    img: "assets/img/orzu.webp",
+    link: "https://osonschool.uz",
+  },
+  {
+    title: "Fintax",
+    desc: "Website for accountant company",
+    img: "assets/img/port-1.jpg",
+    link: "https://fintax.uz",
+  },
+  {
+    title: "Uzbekistan Airways Tech",
+    desc: "The only aircraft repair center in central asia",
+    img: "assets/img/port-3.jpg",
+    link: "https://airtech.uz",
+  },
+  {
+    title: "Premium Pipe",
+    desc: "Leading manufacturer of polymer pipes",
+    img: "assets/img/port-5.jpg",
+    link: "https://premiumpipe.com",
+  },
+  {
+    title: "Home24",
+    desc: "Online store for home supplies",
+    img: "assets/img/home.jpg",
+    link: "https://home24.uz",
+  },
+];
+
+const formatLink = (url) => url.replace(/^https?:\/\//, "");
+</script>
 
 <style scoped>
 .items {
@@ -147,7 +162,7 @@
 }
 
 .linker {
-  display: none;
+  display: flex;
   justify-content: flex-end;
   padding-right: 16px;
 }
